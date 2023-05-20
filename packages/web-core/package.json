@@ -2,15 +2,22 @@
   "name": "@middleware-ts/web-core",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/middleware-ts-web-core.cjs.js",
+  "module": "dist/middleware-ts-web-core.esm.js",
   "scripts": {
+    "fix": "pnpm preconstruct fix",
+    "build": "pnpm preconstruct build",
+    "watch": "pnpm preconstruct watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist",
+    "types"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "preconstruct": {
-    "umdName": "webClient",
     "entrypoints": [
       "index.ts",
       "types/index.ts"

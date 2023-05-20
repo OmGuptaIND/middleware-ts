@@ -1,0 +1,4 @@
+{
+  "main": "dist/middleware-ts-web-core-types.cjs.js",
+  "module": "dist/middleware-ts-web-core-types.esm.js"
+}
